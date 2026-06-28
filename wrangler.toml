@@ -7,4 +7,4 @@ routes = [
   "www.tkurmann.ch/*"
 ]
 
-assets = { directory = ".", binding = "ASSETS" }
+assets = { directory = "public", binding = "ASSETS" }
