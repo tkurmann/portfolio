@@ -34,14 +34,25 @@ async function handleRequest(request, env) {
 
   // Try to fetch the file from assets
   try {
-    const asset = await env.ASSETS.fetch(new Request(url.origin + path, request));
-    if (asset.status === 200) {
-      const contentType = CONTENT_TYPE_MAP[path.slice(path.lastIndexOf('.'))] || 'application/octet-stream';
-      const headers = new Headers(asset.headers);
-      headers.set('Content-Type', contentType);
-      // Cache static assets for 1 hour
-      headers.set('Cache-Control', 'public, max-age=3600');
-      return new Response(asset.body, { status: 200, headers });
+    const assetRequest = new Request(new URL(path, request.url).toString(), request);
+
+    // Try common asset binding names (`ASSETS` for newer Wrangler, `__STATIC_CONTENT` for older setups)
+    const bindingNames = ['ASSETS', '__STATIC_CONTENT'];
+    for (const name of bindingNames) {
+      const binding = env[name];
+      if (!binding) continue;
+      try {
+        const asset = await binding.fetch(assetRequest);
+        if (asset && asset.status === 200) {
+          const contentType = CONTENT_TYPE_MAP[path.slice(path.lastIndexOf('.'))] || 'application/octet-stream';
+          const headers = new Headers(asset.headers);
+          headers.set('Content-Type', contentType);
+          headers.set('Cache-Control', 'public, max-age=3600');
+          return new Response(asset.body, { status: 200, headers });
+        }
+      } catch (e) {
+        // try the next binding
+      }
     }
   } catch (e) {
     // ASSETS may not be available in all environments, fall through

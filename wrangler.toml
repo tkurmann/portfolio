@@ -9,3 +9,15 @@ routes = [
 
 [site]
 bucket = "."
+include = [
+  "index.html",
+  "projects.html",
+  "publications.html",
+  "resume.html",
+  "css/**",
+  "js/**",
+  "data/**",
+  "plans/**",
+  "package.json"
+]
+exclude = ["worker.js", "wrangler.toml"]
