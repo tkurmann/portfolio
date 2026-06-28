@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Project Alpha",
+    "description": "A research project focused on developing novel architectures for visual recognition. Achieves state-of-the-art results on multiple benchmarks.",
+    "image": "assets/images/project1.png",
+    "techStack": ["PyTorch", "Python", "CUDA"],
+    "github": "https://github.com/username/project-alpha",
+    "demo": "https://demo-url.com"
+  },
+  {
+    "name": "Project Beta",
+    "description": "An end-to-end system for real-time object detection and tracking in video streams using efficient neural architectures.",
+    "image": "assets/images/project2.png",
+    "techStack": ["TensorFlow", "OpenCV", "ONNX"],
+    "github": "https://github.com/username/project-beta",
+    "demo": "https://demo-url.com"
+  },
+  {
+    "name": "Project Gamma",
+    "description": "A multimodal learning framework that combines vision and language for visual question answering and captioning.",
+    "techStack": ["PyTorch", "Transformers", "Hugging Face"],
+    "github": "https://github.com/username/project-gamma"
+  },
+  {
+    "name": "Project Delta",
+    "description": "A tooling library for efficient model training and deployment. Provides utilities for data loading, augmentation, and distributed training.",
+    "techStack": ["Python", "Docker", "Kubernetes"],
+    "github": "https://github.com/username/project-delta"
+  }
+]

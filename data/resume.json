@@ -1,0 +1,67 @@
+{
+  "education": [
+    {
+      "degree": "PhD in Biomedical Engineering",
+      "institution": "University of Bern, Switzerland",
+      "year": "2017–2021",
+      "thesis": "AI for Medical Imaging: Ophthalmology and Robotic Surgery"
+    },
+    {
+      "degree": "MSc Biomedical Engineering",
+      "institution": "University of Bern, Switzerland",
+      "year": "2013–2015"
+    },
+    {
+      "degree": "BSc Electrical Engineering",
+      "institution": "University of Applied Sciences Bern, Switzerland",
+      "year": "2008–2011"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Staff Machine Learning Engineer",
+      "company": "Intuitive",
+      "period": "April 2025 – Present",
+      "description": "Leading the ML team in Aubonne, Switzerland. Mentoring Senior and Machine Learning Engineers. DRI for stereo matching algorithms in the da Vinci robot."
+    },
+    {
+      "role": "Senior Machine Learning Engineer",
+      "company": "Intuitive",
+      "period": "April 2023 – April 2025",
+      "description": "Developed and deployed machine learning models for surgical robotics."
+    },
+    {
+      "role": "Machine Learning Engineer",
+      "company": "Intuitive",
+      "period": "March 2021 – April 2023",
+      "description": "Worked on computer vision and stereo matching for surgical robots. Focused on 3D reconstruction, real-time inference, and edge computing."
+    },
+    {
+      "role": "PhD Researcher",
+      "company": "AI in Medical Imaging Laboratory, ARTORG Center, University of Bern",
+      "period": "November 2016 – November 2016",
+      "description": "Conducted research in AI for medical imaging with focus on ophthalmology and robotic minimally invasive surgery. Published 6 first-author papers in top-tier venues (MICCAI, Nature Scientific Reports, IJCARS). Developed deep learning methods for surgical instrument recognition, pose estimation, and segmentation. Built and maintained the HPC GPU cluster for the ARTORG Center. Supervised by Prof. Dr. Raphael Sznitman. Received Prix Retina (2020) and MICCAI Young Scientist Award (2019)."
+    },
+    {
+      "role": "Research Engineer",
+      "company": "Ophthalmic Technology Laboratory, ARTORG Center, University of Bern",
+      "period": "August 2015 – March 2021",
+      "description": "Developed ophthalmic technology solutions and diagnostic tools."
+    },
+    {
+      "role": "Software Engineer",
+      "company": "Comlab AG, Ittigen, Switzerland",
+      "period": "April 2013 – February 2015",
+      "description": "Developed enterprise Java applications (Java EE/Spring Boot) with scalable architecture design. Implemented RESTful APIs, database integration, and web-based visualization solutions. Mentored junior developers."
+    }
+  ],
+  "skills": {
+    "Computer Vision": ["Stereo Matching", "3D Reconstruction", "Multi-View Stereo (MVS)", "NeRF", "CNNs", "Vision Transformers"],
+    "Programming": ["Python", "C++", "CUDA"],
+    "Deep Learning Frameworks": ["PyTorch", "ONNX", "TensorRT"],
+    "CV Libraries": ["OpenCV", "PCL (Point Cloud Library)", "VTK", "Open3D"],
+    "Tools": ["git", "GitHub Actions (CI/CD)", "Docker", "CMake", "Linux"],
+    "Analysis": ["Matplotlib", "NumPy", "SciPy", "scikit-learn", "pandas"],
+    "Deployment": ["Model Optimization", "GPU Acceleration", "Embedded Deployment", "MLOps"]
+  }
+}

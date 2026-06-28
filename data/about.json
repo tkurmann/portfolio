@@ -1,0 +1,24 @@
+{
+  "name": "Thomas Kurmann",
+  "title": "Staff Machine Learning Engineer",
+  "affiliation": "Intuitive — Aubonne, Switzerland",
+  "bio": [
+    "I am a Staff Machine Learning Engineer at Intuitive, where I lead the machine learning team working on surgical robotics. I am the DRI (Directly Responsible Individual) for stereo matching algorithms in the da Vinci robot.",
+    "I hold a PhD in Biomedical Engineering from the University of Bern, where I researched AI for medical imaging with a focus on ophthalmology and robotic minimally invasive surgery. I have published 6 first-author papers in top-tier venues."
+  ],
+  "photo": "assets/images/profile.jpg",
+  "researchInterests": [
+    "Computer Vision",
+    "Stereo Matching",
+    "3D Reconstruction",
+    "Deep Learning",
+    "Surgical Robotics",
+    "Medical Imaging"
+  ],
+  "socialLinks": {
+    "scholar": "https://scholar.google.com/citations?user=McFX8a4AAAAJ",
+    "github": "https://github.com/tkurmann",
+    "linkedin": "https://linkedin.com/in/thomas-kurmann",
+    "email": "mailto:tkurmann@gmail.com"
+  }
+}
