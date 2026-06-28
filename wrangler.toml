@@ -17,7 +17,5 @@ include = [
   "css/**",
   "js/**",
   "data/**",
-  "plans/**",
-  "package.json"
 ]
-exclude = ["worker.js", "wrangler.toml"]
+exclude = ["worker.js", "wrangler.toml", "package.json", "README.md", "bun.lock", "bun.lockb"]
