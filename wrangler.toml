@@ -7,15 +7,4 @@ routes = [
   "www.tkurmann.ch/*"
 ]
 
-[site]
-bucket = "."
-include = [
-  "index.html",
-  "projects.html",
-  "publications.html",
-  "resume.html",
-  "css/**",
-  "js/**",
-  "data/**",
-]
-exclude = ["worker.js", "wrangler.toml", "package.json", "README.md", "bun.lock", "bun.lockb"]
+assets = { directory = ".", binding = "ASSETS" }
