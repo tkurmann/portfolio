@@ -363,11 +363,14 @@
     }
 
     // --- Initialize content loading based on current page ---
-    var currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    var currentPage = window.location.pathname.split('/').pop();
+    if (!currentPage || currentPage === 'index') currentPage = 'index.html';
+    if (currentPage === 'projects') currentPage = 'projects.html';
+    if (currentPage === 'publications') currentPage = 'publications.html';
+    if (currentPage === 'resume') currentPage = 'resume.html';
 
     switch (currentPage) {
         case 'index.html':
-        case '':
             loadAbout();
             break;
         case 'publications.html':

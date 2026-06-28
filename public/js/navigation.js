@@ -26,7 +26,11 @@
 
     // --- Active nav link highlighting ---
     const navLinks = document.querySelectorAll('.nav-link');
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    let currentPage = window.location.pathname.split('/').pop();
+    if (!currentPage || currentPage === 'index') currentPage = 'index.html';
+    if (currentPage === 'projects') currentPage = 'projects.html';
+    if (currentPage === 'publications') currentPage = 'publications.html';
+    if (currentPage === 'resume') currentPage = 'resume.html';
 
     navLinks.forEach(function (link) {
         if (link.getAttribute('href') === currentPage) {
