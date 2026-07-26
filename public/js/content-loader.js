@@ -194,7 +194,11 @@
      */
     function renderProjects(projects) {
         var container = document.getElementById('projects-list');
-        if (!container || !projects || projects.length === 0) return;
+        if (!container) return;
+        if (!projects || projects.length === 0) {
+            container.innerHTML = '<p class="loading-placeholder">Projects coming soon.</p>';
+            return;
+        }
 
         container.innerHTML = projects.map(function (project) {
             var imageHtml = '';
@@ -236,27 +240,28 @@
 
         var html = '';
 
-        // Education
-        if (data.education && data.education.length > 0) {
-            html += '<div class="resume-section"><h2>Education</h2><div class="timeline">';
-            data.education.forEach(function (edu) {
-                html += '<div class="timeline-item">' +
-                    '<h3>' + escapeHtml(edu.degree) + '</h3>' +
-                    '<div class="meta">' + escapeHtml(edu.institution) + ' · ' + escapeHtml(edu.year) + '</div>';
-                if (edu.thesis) html += '<p>Thesis: ' + escapeHtml(edu.thesis) + '</p>';
-                html += '</div>';
-            });
-            html += '</div></div>';
-        }
-
-        // Experience
+        // Experience first (matches CV order)
         if (data.experience && data.experience.length > 0) {
             html += '<div class="resume-section"><h2>Experience</h2><div class="timeline">';
             data.experience.forEach(function (exp) {
                 html += '<div class="timeline-item">' +
                     '<h3>' + escapeHtml(exp.role) + '</h3>' +
                     '<div class="meta">' + escapeHtml(exp.company) + ' · ' + escapeHtml(exp.period) + '</div>';
-                if (exp.description) html += '<p>' + escapeHtml(exp.description) + '</p>';
+                if (exp.description) html += '<p class="exp-summary">' + escapeHtml(exp.description) + '</p>';
+                if (exp.highlights && exp.highlights.length > 0) {
+                    html += '<ul class="exp-highlights">' +
+                        exp.highlights.map(function (item) {
+                            return '<li>' + escapeHtml(item) + '</li>';
+                        }).join('') +
+                        '</ul>';
+                }
+                if (exp.tags && exp.tags.length > 0) {
+                    html += '<div class="exp-tags">' +
+                        exp.tags.map(function (tag) {
+                            return '<span class="badge">' + escapeHtml(tag) + '</span>';
+                        }).join('') +
+                        '</div>';
+                }
                 html += '</div>';
             });
             html += '</div></div>';
@@ -276,6 +281,47 @@
                         '</ul></div>';
                 }
             }
+            html += '</div></div>';
+        }
+
+        // Education
+        if (data.education && data.education.length > 0) {
+            html += '<div class="resume-section"><h2>Education</h2><div class="timeline">';
+            data.education.forEach(function (edu) {
+                html += '<div class="timeline-item">' +
+                    '<h3>' + escapeHtml(edu.degree) + '</h3>' +
+                    '<div class="meta">' + escapeHtml(edu.institution) + ' · ' + escapeHtml(edu.year) + '</div>';
+                if (edu.thesis) html += '<p>Thesis: ' + escapeHtml(edu.thesis) + '</p>';
+                html += '</div>';
+            });
+            html += '</div></div>';
+        }
+
+        // Awards
+        if (data.awards && data.awards.length > 0) {
+            html += '<div class="resume-section"><h2>Honors & Awards</h2><ul class="awards-list">';
+            data.awards.forEach(function (award) {
+                var title = escapeHtml(award.title);
+                if (award.url) {
+                    title = '<a href="' + escapeHtml(award.url) + '" target="_blank" rel="noopener">' + title + '</a>';
+                }
+                html += '<li>' +
+                    '<span class="award-title">' + title + '</span>' +
+                    (award.org ? ' — ' + escapeHtml(award.org) : '') +
+                    (award.year ? ' <span class="award-year">' + escapeHtml(award.year) + '</span>' : '') +
+                    '</li>';
+            });
+            html += '</ul></div>';
+        }
+
+        // Languages
+        if (data.languages && data.languages.length > 0) {
+            html += '<div class="resume-section"><h2>Languages</h2><div class="languages-list">';
+            html += data.languages.map(function (lang) {
+                return '<span class="badge">' + escapeHtml(lang.name) +
+                    (lang.level ? ' (' + escapeHtml(lang.level) + ')' : '') +
+                    '</span>';
+            }).join('');
             html += '</div></div>';
         }
 

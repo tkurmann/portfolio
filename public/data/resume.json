@@ -3,65 +3,151 @@
     {
       "degree": "PhD in Biomedical Engineering",
       "institution": "University of Bern, Switzerland",
-      "year": "2017–2021",
-      "thesis": "AI for Medical Imaging: Ophthalmology and Robotic Surgery"
+      "year": "2016 – 2021"
     },
     {
       "degree": "MSc Biomedical Engineering",
       "institution": "University of Bern, Switzerland",
-      "year": "2013–2015"
+      "year": "2013 – 2015"
     },
     {
       "degree": "BSc Electrical Engineering",
       "institution": "University of Applied Sciences Bern, Switzerland",
-      "year": "2008–2011"
+      "year": "2008 – 2011"
+    },
+    {
+      "degree": "EFZ Elektroniker",
+      "institution": "Glattbrugg, Switzerland",
+      "year": "2004 – 2008"
     }
   ],
   "experience": [
     {
-      "role": "Staff Machine Learning Engineer",
-      "company": "Intuitive",
-      "period": "April 2025 – Present",
-      "description": "Leading the ML team in Aubonne, Switzerland. Mentoring Senior and Machine Learning Engineers. DRI for stereo matching algorithms in the da Vinci robot."
+      "role": "Staff ML Engineer",
+      "company": "Intuitive Surgical, Aubonne, Switzerland",
+      "period": "2021 – Present",
+      "description": "Staff ML Engineer (Apr 2025–Present) | Senior ML Engineer (Apr 2023–Apr 2025) | ML Engineer (Mar 2021–Apr 2023) | Intern (Apr–Aug 2018, Sunnyvale, CA)",
+      "highlights": [
+        "DRI for stereo matching company-wide: owned the full pipeline end-to-end (synthetic data generation → training → validation → optimization → deployment → V&V) and shipped production stereo depth for a da Vinci product, supporting FDA 510(k) clearance activities",
+        "Deployed two stereo models to production (high-accuracy and real-time variants) on edge GPU and Jetson hardware, using TensorRT quantization for live in-vivo inference on da Vinci",
+        "Designed a shared-backbone multi-task model (stereo, segmentation, classification, optical flow) that cut inference time 30% and reduced model footprint versus separate networks",
+        "Built the graph-based inference platform adopted by all ML teams at Intuitive, and an evaluation platform for regulatory-compliant V&V",
+        "Engineered the data engine for training and test sets: custom structured-light hardware for ground-truth depth, porcine and in-human experiments, endoscope/calibration limit characterization, and a reverse image search tool for surgical-video curation",
+        "Shipped real-time surgical-instrument segmentation and intraoperative anomaly detection on live endoscopic video",
+        "Built an autonomous CUDA optimization system using LLM agents that automatically optimized, compiled, profiled, benchmarked and validated kernels, improving production kernels by ≥20%",
+        "Led a team of 2 engineers and mentored 2 interns; drove close cross-site collaboration with R&D teams in Sunnyvale, CA and Germany"
+      ],
+      "tags": [
+        "Computer Vision",
+        "Segmentation",
+        "Multi-Task Learning",
+        "Stereo Matching",
+        "Multi-Spectral Imaging",
+        "Quantization",
+        "LLM Agents",
+        "CUDA",
+        "Edge Deployment"
+      ]
     },
     {
-      "role": "Senior Machine Learning Engineer",
-      "company": "Intuitive",
-      "period": "April 2023 – April 2025",
-      "description": "Developed and deployed machine learning models for surgical robotics."
+      "role": "PhD Candidate",
+      "company": "AI in Medical Imaging Laboratory, ARTORG Center, University of Bern, Switzerland",
+      "period": "2016 – 2021",
+      "highlights": [
+        "Developed deep learning methods for surgical instrument recognition, pose estimation, and segmentation in minimally invasive surgery video",
+        "Built expert-level biomarker detection and segmentation models for retinal OCT, achieving clinical-grade performance in ophthalmology",
+        "Published 6 peer-reviewed papers (5 first-author, 1 co-first) in top-tier venues (MICCAI, Nature Scientific Reports, IJCARS); MICCAI Young Scientist Award (2019) and Prix Retina (2020)",
+        "Supervised by Prof. Dr. Raphael Sznitman, with collaborations from Prof. Dr. Sebastian Wolf (University of Bern) and Prof. Dr. Greg Hager (Johns Hopkins University)"
+      ],
+      "tags": [
+        "Computer Vision",
+        "Deep Learning",
+        "Medical Imaging",
+        "Ophthalmology"
+      ]
     },
     {
-      "role": "Machine Learning Engineer",
-      "company": "Intuitive",
-      "period": "March 2021 – April 2023",
-      "description": "Worked on computer vision and stereo matching for surgical robots. Focused on 3D reconstruction, real-time inference, and edge computing."
-    },
-    {
-      "role": "PhD Researcher",
-      "company": "AI in Medical Imaging Laboratory, ARTORG Center, University of Bern",
-      "period": "November 2016 – November 2016",
-      "description": "Conducted research in AI for medical imaging with focus on ophthalmology and robotic minimally invasive surgery. Published 6 first-author papers in top-tier venues (MICCAI, Nature Scientific Reports, IJCARS). Developed deep learning methods for surgical instrument recognition, pose estimation, and segmentation. Built and maintained the HPC GPU cluster for the ARTORG Center. Supervised by Prof. Dr. Raphael Sznitman. Received Prix Retina (2020) and MICCAI Young Scientist Award (2019)."
-    },
-    {
-      "role": "Research Engineer",
-      "company": "Ophthalmic Technology Laboratory, ARTORG Center, University of Bern",
-      "period": "August 2015 – March 2021",
-      "description": "Developed ophthalmic technology solutions and diagnostic tools."
-    },
-    {
-      "role": "Software Engineer",
-      "company": "Comlab AG, Ittigen, Switzerland",
-      "period": "April 2013 – February 2015",
-      "description": "Developed enterprise Java applications (Java EE/Spring Boot) with scalable architecture design. Implemented RESTful APIs, database integration, and web-based visualization solutions. Mentored junior developers."
+      "role": "Earlier Career",
+      "company": "Software, Electrical & Mechanical Engineering, Switzerland",
+      "period": "2008 – 2015",
+      "highlights": [
+        "Software, embedded, and electrical engineering across regulated/industrial settings: enterprise Java/Spring Boot backends and REST APIs (Comlab AG); embedded Linux and real-time data acquisition for seismic/structural monitoring (GSI GeoSolutions, GeoSIG); metrology-grade accelerometer calibration (Swiss Federal Office of Metrology)"
+      ],
+      "tags": [
+        "Software Engineering",
+        "Embedded Systems",
+        "Hardware Design",
+        "Electrical Engineering",
+        "Mechanical Engineering",
+        "C/C++"
+      ]
     }
   ],
   "skills": {
-    "Computer Vision": ["Stereo Matching", "3D Reconstruction", "Multi-View Stereo (MVS)", "NeRF", "CNNs", "Vision Transformers"],
-    "Programming": ["Python", "C++", "CUDA"],
-    "Deep Learning Frameworks": ["PyTorch", "ONNX", "TensorRT"],
-    "CV Libraries": ["OpenCV", "PCL (Point Cloud Library)", "VTK", "Open3D"],
-    "Tools": ["git", "GitHub Actions (CI/CD)", "Docker", "CMake", "Linux"],
-    "Analysis": ["Matplotlib", "NumPy", "SciPy", "scikit-learn", "pandas"],
-    "Deployment": ["Model Optimization", "GPU Acceleration", "Embedded Deployment", "MLOps"]
-  }
+    "Robotic Perception": [
+      "Stereo Matching",
+      "Depth Estimation",
+      "3D Reconstruction",
+      "Multi-View Geometry",
+      "Multi-Spectral Imaging",
+      "Camera Calibration",
+      "Optical Flow",
+      "Pose Estimation"
+    ],
+    "Computer Vision & Deep Learning": [
+      "Multi-Task Learning",
+      "Semantic Segmentation",
+      "Object Detection",
+      "Vision Transformers",
+      "CNNs",
+      "Quantization",
+      "Model Optimization"
+    ],
+    "Edge AI & Performance": [
+      "TensorRT",
+      "CUDA Kernel Optimization",
+      "Embedded Inference",
+      "NVIDIA Jetson",
+      "Real-Time Systems"
+    ],
+    "Programming": ["Python", "C++", "CUDA", "C"],
+    "Frameworks": ["PyTorch", "ONNX", "OpenCV"],
+    "Systems & Tooling": [
+      "Production ML Pipelines",
+      "Synthetic Data Generation",
+      "Docker",
+      "GitHub Actions",
+      "Linux",
+      "CMake"
+    ]
+  },
+  "awards": [
+    {
+      "title": "Prix Retina",
+      "org": "Swiss VitreoRetinal Group",
+      "year": "Jan 2020",
+      "url": "https://www.svrg.info/prix-retinaaward-preistraeger/"
+    },
+    {
+      "title": "MICCAI Young Scientist Award",
+      "org": "MICCAI Society",
+      "year": "Nov 2019",
+      "url": "https://miccai.org/index.php/about-miccai/awards/best-paper-award-and-young-scientist-award/"
+    },
+    {
+      "title": "EndoVis (MICCAI)",
+      "org": "1st place (2015), 2nd place (2017)",
+      "year": "2015, 2017"
+    },
+    {
+      "title": "Eurobot National Champion",
+      "org": "Swiss Eurobot Competition",
+      "year": "2011"
+    }
+  ],
+  "languages": [
+    { "name": "English", "level": "Fluent" },
+    { "name": "German", "level": "Fluent" },
+    { "name": "French", "level": "Conversational" }
+  ]
 }

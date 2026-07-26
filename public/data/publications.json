@@ -35,6 +35,14 @@
       "venue": "International Journal of Computer Assisted Radiology and Surgery (IJCARS)",
       "year": 2021,
       "pdf": "https://link.springer.com/article/10.1007/s11548-021-02404-2"
+    },
+    {
+      "title": "Assessment of Patient Specific Information in the Wild on Fundus Photography and Optical Coherence Tomography",
+      "authors": "M.R. Munk, T. Kurmann (co-first), P. Márquez-Neila, M.S. Zinkernagel, S. Wolf, R. Sznitman",
+      "venue": "Scientific Reports, 11, 8621",
+      "year": 2021,
+      "pdf": "https://www.nature.com/articles/s41598-021-86577-5",
+      "award": "Co-first author"
     }
   ],
   "coAuthored": [
@@ -87,13 +95,6 @@
       "venue": "arXiv preprint arXiv:2101.01133",
       "year": 2021,
       "pdf": "https://arxiv.org/abs/2101.01133"
-    },
-    {
-      "title": "Assessment of Patient Specific Information in the Wild on Fundus Photography and Optical Coherence Tomography",
-      "authors": "M.R. Munk, T. Kurmann, P. Marquez-Neila, M.S. Zinkernagel, S. Wolf, R. Sznitman",
-      "venue": "Scientific Reports, 11, 8621",
-      "year": 2021,
-      "pdf": "https://www.nature.com/articles/s41598-021-88092-1"
     },
     {
       "title": "Machine Learning Can Predict Anti-VEGF Treatment Demand in Treat-and-Extend Regimen for AMD, DME, and RVO",

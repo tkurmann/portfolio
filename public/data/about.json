@@ -1,24 +1,25 @@
 {
-  "name": "Thomas Kurmann",
-  "title": "Staff Machine Learning Engineer",
-  "affiliation": "Intuitive — Aubonne, Switzerland",
+  "name": "Thomas Kurmann, PhD",
+  "title": "Staff Machine Learning Engineer | Robotic Perception & Real-Time ML",
+  "affiliation": "Intuitive Surgical — Aubonne, Switzerland",
   "bio": [
-    "I am a Staff Machine Learning Engineer at Intuitive, where I lead the machine learning team working on surgical robotics. I am the DRI (Directly Responsible Individual) for stereo matching algorithms in the da Vinci robot.",
-    "I hold a PhD in Biomedical Engineering from the University of Bern, where I researched AI for medical imaging with a focus on ophthalmology and robotic minimally invasive surgery. I have published 6 first-author papers in top-tier venues."
+    "Staff Machine Learning Engineer (PhD) building production-grade real-time computer vision for robotic surgery. Specialized in stereo depth estimation, multi-task perception, multi-spectral imaging, and efficient edge AI under strict latency and robustness constraints.",
+    "Led the end-to-end delivery of production 3D perception for the da Vinci platform, from synthetic data generation and model development through optimized on-device deployment, supporting FDA 510(k) clearance activities. Expertise in stereo vision, multi-view geometry, and embedded ML with applications spanning robotics, AR/3D, and autonomy.",
+    "Author of 6 peer-reviewed publications (5 first-author), including MICCAI, Nature Scientific Reports, and IJCARS. Recipient of the MICCAI Young Scientist Award and EndoVis Challenge 1st (2015) and 2nd (2017)."
   ],
   "photo": "assets/images/profile.jpg",
   "researchInterests": [
-    "Computer Vision",
     "Stereo Matching",
-    "3D Reconstruction",
-    "Deep Learning",
-    "Surgical Robotics",
-    "Medical Imaging"
+    "Robotic Perception",
+    "Real-Time / Edge AI",
+    "Multi-Task Learning",
+    "Surgical Computer Vision",
+    "Multi-Spectral Imaging"
   ],
   "socialLinks": {
     "scholar": "https://scholar.google.com/citations?user=McFX8a4AAAAJ",
     "github": "https://github.com/tkurmann",
-    "linkedin": "https://linkedin.com/in/thomas-kurmann",
+    "linkedin": "https://www.linkedin.com/in/thomas-kurmann-phd-6056a7156",
     "email": "mailto:tkurmann@gmail.com"
   }
 }

@@ -516,6 +516,57 @@ h3 {
     font-size: 0.9rem;
 }
 
+.timeline-item .exp-summary {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.exp-highlights {
+    margin: 0.5rem 0 0.75rem;
+    padding-left: 1.15rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.exp-highlights li {
+    margin-bottom: 0.4rem;
+    line-height: 1.45;
+}
+
+.exp-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-top: 0.5rem;
+}
+
+.awards-list {
+    list-style: none;
+    padding: 0;
+}
+
+.awards-list li {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+.award-title {
+    font-weight: 600;
+    color: var(--text);
+}
+
+.award-year {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+.languages-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
